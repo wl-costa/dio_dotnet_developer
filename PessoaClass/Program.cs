@@ -14,8 +14,6 @@ Pessoa pessoa2 = new() // nova variável com as props da classe
     Dinheiro = 816.19M
 };
 
-decimal dinheiroSomado = pessoa1.Dinheiro + pessoa2.Dinheiro;
-
 pessoa1.Apresentar(); // executa o método / função
 pessoa2.Apresentar(); // executa o método / função
-Console.WriteLine($"Juntos vocês tem o total de R${dinheiroSomado}");
+Pessoa.DinheiroTotal(pessoa1.Dinheiro, pessoa2.Dinheiro);
