@@ -17,7 +17,7 @@ namespace PessoaClass.Models
                 Console.WriteLine($"Olá, meu nome é {Nome}, e tenho {Idade} anos.");
             } else 
             {
-                Console.WriteLine($"Você precisa ser maior de 18 anos para rodar esse programa.");
+                Console.WriteLine($"Desculpe {Nome}, você precisa ser maior de 18 anos para rodar esse programa.");
             }
         }
     }
