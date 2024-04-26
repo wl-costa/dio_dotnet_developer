@@ -15,16 +15,26 @@ namespace PessoaClass.Models
         {
             if (Idade >= 18) // checa se a idade é maior ou igual a 18
             {
-                Console.WriteLine($"Olá, meu nome é {Nome}, e tenho {Idade} anos. Possuo R${Dinheiro} em conta");
-            } else 
+                Console.WriteLine($"Olá, meu nome é {Nome}, e tenho {Idade} anos. Possuo R${Dinheiro} em conta\n");
+            }
+            else
             {
-                Console.WriteLine($"Desculpe {Nome}, você precisa ser maior de 18 anos para rodar esse programa.");
+                Console.WriteLine($"Desculpe {Nome}, você precisa ser maior de 18 anos para rodar esse programa.\n");
             }
         }
-        
-        public static void DinheiroTotal(decimal Pessoa1, decimal Pessoa2)
+
+        public static decimal DinheiroTotal(decimal Pessoa1, decimal Pessoa2)
         {
-            Console.WriteLine($"Juntos vocês tem o total de {Pessoa1 + Pessoa2}");
+            decimal DinheiroTotal = Pessoa1 + Pessoa2;
+            Console.WriteLine($"Juntos vocês tem o total de R${DinheiroTotal}\n");
+            return DinheiroTotal;
+        }
+
+        public static void DinheiroTotalMenosDivida(decimal Dinheiro)
+        {
+            decimal divida = 500.38M;
+            Console.WriteLine($"Vocês possuem uma dívida de R${divida}\n");
+            Console.WriteLine($"Subtraindo as dívidas, vocês possuem R${Dinheiro - divida}\n");
         }
     }
 }

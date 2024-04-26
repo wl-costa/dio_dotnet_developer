@@ -10,10 +10,10 @@ Pessoa pessoa1 = new() // nova variável com as props da classe
 Pessoa pessoa2 = new() // nova variável com as props da classe
 {
     Nome = "Thomas", // altera a propriedade Nome
-    Idade = 18, // altera a propriedade Idade
+    Idade = 20, // altera a propriedade Idade
     Dinheiro = 816.19M
 };
 
 pessoa1.Apresentar(); // executa o método / função
 pessoa2.Apresentar(); // executa o método / função
-Pessoa.DinheiroTotal(pessoa1.Dinheiro, pessoa2.Dinheiro);
+Pessoa.DinheiroTotalMenosDivida(Pessoa.DinheiroTotal(pessoa1.Dinheiro, pessoa2.Dinheiro));
