@@ -24,8 +24,7 @@ namespace PessoaClass.Models
         
         public static void DinheiroTotal(decimal Pessoa1, decimal Pessoa2)
         {
-            decimal dinheiroSomado = Pessoa1 + Pessoa2;
-            Console.WriteLine($"Juntos vocês tem o total de {dinheiroSomado}");
+            Console.WriteLine($"Juntos vocês tem o total de {Pessoa1 + Pessoa2}");
         }
     }
 }
