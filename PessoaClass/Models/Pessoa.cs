@@ -13,6 +13,7 @@ namespace PessoaClass.Models
 
         public void Apresentar() // um método, a.k.a function (javascript)
         {
+            Console.WriteLine(DateTime.Now);
             if (Idade >= 18) // checa se a idade é maior ou igual a 18
             {
                 Console.WriteLine($"Olá, meu nome é {Nome}, e tenho {Idade} anos. Possuo R${Dinheiro} em conta\n");
