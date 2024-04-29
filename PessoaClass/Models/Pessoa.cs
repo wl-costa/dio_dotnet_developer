@@ -26,16 +26,16 @@ namespace PessoaClass.Models
         public static void ShowDateTime()
         {
             DateTime dataAtual = DateTime.Now;
-            string data = dataAtual.ToString("HH:mm");
+            string data = dataAtual.ToString("dd/MM/yyyy");
             string horario = dataAtual.ToString("HH:mm");
             Console.WriteLine($"\nAplicação executada no dia {data} às {horario}\n");
         }
 
         public static decimal DinheiroTotal(decimal Pessoa1, decimal Pessoa2)
         {
-            decimal DinheiroTotal = Pessoa1 + Pessoa2;
-            Console.WriteLine($"Juntos vocês tem o total de R${DinheiroTotal}\n");
-            return DinheiroTotal;
+            decimal dinheiroTotal = Pessoa1 + Pessoa2;
+            Console.WriteLine($"Juntos vocês tem o total de R${dinheiroTotal}\n");
+            return dinheiroTotal;
         }
 
         public static void DinheiroTotalMenosDivida(decimal dinheiro)
