@@ -14,6 +14,7 @@ Pessoa pessoa2 = new() // nova variável com as props da classe
     Dinheiro = 816.19M
 };
 
+Pessoa.ShowDateTime();
 pessoa1.Apresentar(); // executa o método / função
 pessoa2.Apresentar(); // executa o método / função
 Pessoa.DinheiroTotalMenosDivida(Pessoa.DinheiroTotal(pessoa1.Dinheiro, pessoa2.Dinheiro));
