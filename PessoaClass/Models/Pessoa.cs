@@ -35,15 +35,14 @@ namespace PessoaClass.Models
         {
             decimal dinheiroTotal = Pessoa1 + Pessoa2;
             Console.WriteLine($"Juntos vocês tem o total de R${dinheiroTotal}\n");
-            int dinheiroTotalInt = Convert.ToInt32(dinheiroTotal); 
-            Console.WriteLine(dinheiroTotalInt);
+            /*int dinheiroTotalInt = Convert.ToInt32(dinheiroTotal); uma forma de converter decimal para int*/
             return dinheiroTotal;
         }
 
         public static void DinheiroTotalMenosDivida(decimal dinheiro)
         {
             decimal divida = 500.38M;
-            DateTime dataLimite = DateTime.Today.AddDays(28);
+            DateTime dataLimite = DateTime.Today.AddDays(28); 
             string dataString = dataLimite.ToString("dd/MM/yyyy");
             Console.WriteLine($"Vocês possuem uma dívida de R${divida}\n");
             Console.WriteLine($"Vocês tem até o dia {dataString} para pagar suas dívidas sem cobrança de juros\n");
