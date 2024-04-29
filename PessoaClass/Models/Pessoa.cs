@@ -35,6 +35,8 @@ namespace PessoaClass.Models
         {
             decimal dinheiroTotal = Pessoa1 + Pessoa2;
             Console.WriteLine($"Juntos vocês tem o total de R${dinheiroTotal}\n");
+            int dinheiroTotalInt = Convert.ToInt32(dinheiroTotal); 
+            Console.WriteLine(dinheiroTotalInt);
             return dinheiroTotal;
         }
 
