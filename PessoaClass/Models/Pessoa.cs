@@ -38,8 +38,8 @@ namespace PessoaClass.Models
         {
             decimal dinheiroTotal = pessoa1 + pessoa2;
             Console.WriteLine($"Juntos vocês tem o total de R${dinheiroTotal}\n");
-            /*int dinheiroTotalInt = Convert.ToInt32(dinheiroTotal); uma forma de converter decimal para int*/
-            /*int dinheiroTotalInt = int.Parse(dinheiroTotal); outra forma de converter decimal para int*/
+            /*int dinheiroTotalInt = Convert.ToInt32(dinheiroTotal); uma forma de converter decimal para int [FORMA RECOMENDADA]*/
+            /*int dinheiroTotalInt = int.Parse(dinheiroTotal); outra forma de converter decimal para int [FORMA NÃO RECOMENDADA]*/
             return dinheiroTotal;
         }
 
