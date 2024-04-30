@@ -16,6 +16,11 @@ namespace PessoaClass.Models
             Console.WriteLine($"Olá {Nome}. Você possui R${Dinheiro} em conta\n");
         }
 
+        public static void ApresentarCasal(string pessoaNome1, string pessoaNome2)
+        {
+            Console.WriteLine($"Olá {pessoaNome1} e {pessoaNome2}.\n");
+        }
+
         public static void MensagemDeErroIdade()
         {  
             Console.WriteLine($"Desculpe, você precisa ser maior de 18 anos para rodar esse programa.\n");
@@ -44,14 +49,14 @@ namespace PessoaClass.Models
             return pessoa;
         }
 
-        public static void DinheiroTotalMenosDividaCasal(decimal dinheiro)
+        public static void DinheiroTotalMenosDividaCasal(decimal dinheiroTotal)
         {
             decimal divida = 500.38M;
             DateTime dataLimite = DateTime.Today.AddDays(28);
             string dataString = dataLimite.ToString("dd/MM/yyyy");
             Console.WriteLine($"Vocês possuem uma dívida de R${divida}\n");
             Console.WriteLine($"Vocês tem até o dia {dataString} para pagar suas dívidas sem cobrança de juros\n");
-            Console.WriteLine($"Subtraindo as dívidas, vocês possuem R${dinheiro - divida}\n");
+            Console.WriteLine($"Subtraindo as dívidas, vocês possuem R${dinheiroTotal - divida}\n");
         }
 
         public static void DinheiroTotalMenosDivida(decimal dinheiro)
