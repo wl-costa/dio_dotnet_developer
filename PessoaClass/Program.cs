@@ -1,4 +1,4 @@
-﻿using PessoaClass.Models; // solicita a classe correta através do namespace
+﻿using PessoaClass.Models; // Referencia de onde as classes serão utilizadas
 
 Pessoa pessoa1 = new() // nova variável com as props da classe
 {
@@ -21,7 +21,7 @@ static void ExecutarPrograma(Pessoa pessoa1, Pessoa pessoa2)
 
 
     switch (idadeValidaPessoa1, idadeValidaPessoa2)
-    {
+    {   
         case (true, true):
             Pessoa.ShowDateTime();
             Pessoa.ApresentarCasal(pessoa1.Nome, pessoa2.Nome);
@@ -69,5 +69,6 @@ static void ExecutarPrograma(Pessoa pessoa1, Pessoa pessoa2)
 
 }
 
+Calculadora.Matematica(5, 10);
 ExecutarPrograma(pessoa1, pessoa2);
 
